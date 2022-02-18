@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #454549;
+    
+}
+p,
+h2 {
+    margin: 1rem 4rem;
+    line-height: 4em;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 1rem;
+}
+main img {
+    max-width: 60%;
+    height: 40%;
+    margin: 0 6rem;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+.titulares {
+    padding: 1rem;
+    background-color: #303036;
+    color: #eee;
+    z-index: 9;
+}
+footer {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #303036;
+    color: #eee;
+    z-index: 9;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.menu ul {
+    list-style-type: none;
+    font-size: x-large;
+}
+.menu a {
+    text-decoration: none;
+    color:  #4F4F84; 
+}
+.hero-image {
+    background-image: url(../assets/hero-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.hero-image .hero-text{
+    color: #fff;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu li {
+        padding: .5rem;
+    }
+ 
+    .flex-container {
+        display: flex;
+        align-items: center; /*centrar el texto*/
+    }
+    .flex-item {
+        flex: 0 0 50%;
+    }
+
+    .flex-order-1 {
+        order: 1;
+    }
+    .flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .hero-image {
+        background-position: top;
+    }
+    main img {
+        margin-top: 15px;
+        width: 60%;
+    }
+    p,
+    h2 {
+    margin: 1rem 4rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+
+
+
+
+
+
+
+
+
+

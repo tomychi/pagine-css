@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', serif;
+}
+body {
+    background-color: #454549;
+}
+/*
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    margin-left: 1vh;
+    border: medium solid black;
+    width: 300px;
+    height: 350px;
+}
+
+.card img {
+    height: 300px;
+    object-fit: contain;
+    object-fit: scale-down;
+    object-position: 15px top;
+}
+*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #eee;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.card-image {
+
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    background-repeat: no-repeat;
+}
+
+.car-1 {
+    background-image: url(../products/frappuccino.jpg);
+    background-position: 50% 80%;
+}
+
+.car-2 {
+    background-image: url(../products/cold-brew.jpg);
+    background-position: 50% 70%;
+}
+.car-3 {
+    background-image: url(../products/milk-shake.jpg);
+    background-position: 50% 65%;
+}
+
+.car-4 {
+    background-image: url(../products/smoothie.jpg);
+    background-position: 50% 38%;
+}
+
+.car-5 {
+    background-image: url(../products/mocha.jpg);
+    background-position: bottom;
+}
+
+.car-6 {
+    background-image: url(../products/muffins.jpg);
+    background-position: bottom;
+}
+
+.car-7 {
+    background-image: url(../products/orange-juice.jpg);
+    background-position: 50% 70%;
+}
+
+.car-8 {
+    background-image: url(../products/tea.jpg);
+    background-position: 93% 0%;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: #eee;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: #eee;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition:  all 1s ease;
+}
+
+p::before {
+    content: "$";
+}
+
+
+
+
+
+
+
+
