@@ -1,18 +1,3 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-body {
-    background-color: #454549;
-  
-}
-
 .contact-form {
   --form-text-color: #666;
   --form-placeholder-color: #006999;

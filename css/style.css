@@ -1,23 +1,42 @@
+:root {
+    --bg-body:  #2A2F34;
+    --bg-header-footer:  #212529;
+    --color-primary:#7455F2;
+    --color-title:rgb(34, 33, 33);
+    --color-parrafo: #eee;
+
+    --font-title: sans-serif; 
+    --font-paragraph: sans-serif; 
+}
+
+
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Vollkorn', serif;
 }
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #454549;
-    
+    background-color: var(--bg-body);
 }
-p,
 h2 {
     margin: 1rem 4rem;
-    line-height: 4em;
+    font-family: sans-serif;
+    color: var(--color-primary);
+    font-size: 1.4em;
 }
+.flex-item p {
+    margin: 1rem 4rem;
+    line-height: 4rem;
+    color: var(--color-parrafo);
+    font-family: sans-serif;
+}
+
 .logo img {
     max-width: 100%;
     height: auto;
@@ -38,15 +57,15 @@ main {
 
 .titulares {
     padding: 1rem;
-    background-color: #303036;
-    color: #eee;
+    background-color: var(--bg-header-footer);
+    color: var(--color-primary);
     z-index: 9;
 }
 footer {
     padding: 1rem;
     margin-top: 2rem;
-    background-color: #303036;
-    color: #eee;
+    background-color: var(--bg-header-footer);
+    color: var(--color-primary);
     z-index: 9;
 }
 
@@ -64,28 +83,28 @@ footer {
 }
 .menu a {
     text-decoration: none;
-    color:  #4F4F84; 
+    color:  var(--color-primary); 
 }
 .menu li {
     margin-top: .8rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .hero-image {
     background-image: url(../assets/hero-img.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-image .hero-text{
     color: #fff;
     text-align: center;
 }
 .hero-text h1 {
-    font-size: 60px;
+    font-size: 4em;
     font-weight: bold;
 }
 
@@ -94,14 +113,17 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 .container-social a {
-    font-size: 2.7rem;
-    color:  #4F4F84;
-    margin-top: 15px;
+    color:  var(--color-primary);
+    margin-top: 18px;
 }
+.container-social i {
+    font-size: 1.8rem;
 
-@media screen and (min-width: 700px){
+}
+@media screen and (min-width: 48em){
     .header {
         display: flex;
         flex-direction: row;
@@ -154,15 +176,11 @@ footer {
 
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 64em) {
+    .hero-image {
+        background-position: 70% 50%;
+    }
 }
-
-
-
-
-
-
 
 
 
